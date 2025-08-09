@@ -3,15 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Site</title>
+    <title>Organization Website</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        h1 { color: #333; }
-        p { color: #666; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        /* Page content */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, world!</h1>
-    <p>Welcome to my site hosted on GitHub Pages.</p>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events Calendar</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About Us</a>
+        <a href="members.html">Active Members</a>
+        <a href="recognitions.html">Volunteer Recognitions</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="more.html">More</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Welcome to Our Organization</h1>
+        <p>This is our homepage. Use the navigation bar above to explore.</p>
+    </div>
+
 </body>
 </html>
