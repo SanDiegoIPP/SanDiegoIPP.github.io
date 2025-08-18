@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organization Website</title>
     <style>
+        @font-face {
+        font-family: 'Rosehot';
+        src: url('fonts/MyFont.woff2') format('woff2'),
+            url('fonts/MyFont.woff') format('woff'),
+            url('fonts/MyFont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #fef8ed;
+            color: #102f48
         }
+
+        h1, h2, h3 {
+            color: #6d130a;
+        }
+
         /* Navigation Bar */
         .navbar {
-            background-color: #000000; /* black background */
+            background-color: #102f48; /* black background */
+            color: white
             height: 64px;              /* taller navbar */
             display: flex;             /* use flexbox */
             align-items: center;       /* vertically center items */
@@ -32,7 +48,7 @@
             text-decoration: none;
         }
         .navbar a:hover {
-            background-color: #cc0000;
+            background-color: #6d130a;
         }
         /* Page content */
         .content {
@@ -56,11 +72,130 @@
         <a href="more.html">More</a>
     </div>
 
-    <!-- Main Content -->
+    <!-- Main Content-Title -->
     <div class="content">
         <h1>Welcome to Our Organization</h1>
         <p>This is our homepage. Use the navigation bar above to explore.</p>
     </div>
 
+    <!-- Main Content-Mission -->
+    <style>
+        .content-mission { 
+            text-align: left; 
+            background: linear-gradient(to right, #7ba6c7, #bcd3e9);
+            padding: 20px;
+        }
+      </style>
+    <div class = "content-mission">
+        <h2> Mission </h2>
+        <p> why the emphasis on prevention </p> 
+        <p> using volunteers (although use nicer language) to support our 
+            initiatives and those of others </p>  
+        <p> communities we want to serve </p> 
+        <p> How we hope to support volunteers build their skills </p> 
+        <p> All of our fundraised/donated money goes directly into the community
+             or for necessary legal costs </p> 
+    </div>
+
+    <!-- Main Content-Pillars Title -->
+    <div class = "content-pillarstitle">
+        <style>
+            .content-pillarstitle {
+                text-align: left;
+                padding: 20px 20px 0px 20px;
+                margin-top: 20px
+            }
+        </style>
+        
+        <h2> Pillars </h2>
+    </div>
+    
+
+    <!-- Main Content-Pillars-->
+    <div class="pillars-sections">
+        <style>
+            .pillars-sections {
+                display: flex;
+                gap: 20px; /* space between blocks */
+                justify-content: space-between;
+                margin-bottom: 50px;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+    
+            .pillars-block {
+                flex: 1; /* Equal width for all blocks */
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+            }
+    
+            .pillars-title {
+                background-color:#7ba6c7; /* Customize this color */
+                color: #fef8ed;
+                border-radius: 10px;
+                padding: 10px 0;
+                width: 200px; /* fixed width */
+                margin: 0 auto 15px auto; /* center and add bottom margin */
+            }
+    
+            .pillars-text {
+                text-align: center;
+            }
+        </style>
+    
+        <div class="pillars-block">
+            <div class="pillars-title">Individualized Care</div>
+            <p class="pillars-text"> description </p>
+        </div>
+    
+        <div class="pillars-block">
+            <div class="pillars-title">Resource Dissemination</div>
+            <p class="pillars-text"> description </p>
+        </div>
+    
+        <div class="pillars-block">
+            <div class="pillars-title">Education</div>
+            <p class="pillars-text"> description </p>
+        </div>
+    </div>
+    
+    <!-- Main Content-Howtojoin-->
+    <div class="howtojoin">
+        <style>
+            .howtojoin {
+                display: flex;          /* lay out children side-by-side */
+                align-items: flex-start; /* align top edges */
+                gap: 80px;              /* space between heading and list */
+                padding: 40px;
+            }
+    
+            .howtojoin h1 {
+                margin: 0;
+                white-space: nowrap;    /* keep the heading on one line */
+            }
+    
+            .howtojoin ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                margin: 0;
+            }
+
+            .howtojoin li {
+            margin-bottom: 20px; 
+            }
+        </style>
+    
+        <h2>How to Join?</h2>
+    
+        <ul>
+            <li>No application fee required.</li>
+            <li>Members must be 14 years of age or older.</li>
+            <li>More information on membership can be found on the FAQ page.
+            </li>
+        </ul>
+    </div>
+        
 </body>
 </html>
