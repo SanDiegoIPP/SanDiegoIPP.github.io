@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organization Website</title>
     <style>
+        /* Fonts */
         @font-face {                /* loads Rosehot font */
         font-family: 'Rosehot';
         src: url('fonts/Rosehot.ttf') format('truetype'); /* where it's stored*/
         font-weight: normal;
         font-style: normal;
         }
+
         body {
             font-family: 'Charter', sans-serif; /* sets body font to Charter */
             margin: 0;
             padding: 0;
             background-color: #fef8ed;
             color: #102f48;
-            
         }
 
         h1, h2, h3 {                /* header color + font */
@@ -38,7 +39,6 @@
             align-items: center;       /* vertically center items */
             padding: 0 20px;
           }
-
           .navbar .logo {
             height: 48px;              /* logo height */
             margin-right: 30px;        /* space after logo */
@@ -59,10 +59,71 @@
             padding: 30px;
             text-align: center;
         }
+
+        /* Page content - Mission */
+        .content-mission { 
+            text-align: left; 
+            background: linear-gradient(to right, #7ba6c7, #bcd3e9);
+            padding: 20px;
+        }
+
+        /* Page content - Pillars */
+        .content-pillarstitle {
+                text-align: left;
+                padding: 20px 20px 0px 20px;  /* top right bottom left */
+                margin-top: 20px;
+            }
+        .pillars-sections {
+            display: flex;
+            gap: 20px;              /* space between sections */
+            justify-content: space-between; /* spreads sections out */
+            margin-bottom: 50px;    /* space btw sections + bottom */
+            padding: 0 20px;        /* adds 20px space inside, L + R */
+            box-sizing: border-box; /* ensures padding incl in width calc */
+        }
+        .pillars-block {
+            flex: 1;                /* Equal width for all blocks */
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;    /* Rounds corners by 10px */
+            text-align: center;
+        }
+        .pillars-title {
+            background-color:#7ba6c7; /* Customize this color */
+            color: #fef8ed;
+            border-radius: 10px;    /* Rounds corners by 10px */
+            padding: 10px 0;
+            width: 200px;           /* fixed width no matter text length */
+            margin: 0 auto 15px auto; /* center + add bottom margin */
+        }
+        .pillars-text {
+            text-align: center;
+        }
+
+        /* Page content - How to join */
+        .howtojoin {
+                display: flex;          /* heading + list = side-by-side */
+                align-items: flex-start; /* align top edges */
+                gap: 80px;              /* space btw heading and list */
+                padding: 40px;
+        }
+        .howtojoin h1 {
+            margin: 0;
+            white-space: nowrap;    /* keep the heading on one line */
+        }
+        .howtojoin ul {
+            list-style-type: disc;  /* normal bullet pts */
+            padding-left: 20px;
+            margin: 0;             /* removes default spacing for bullets */
+        }
+        .howtojoin li {
+        margin-bottom: 20px;        /* adds vertical space btw bullet pts */
+        }
     </style>
 </head>
-<body>
 
+
+<body>
     <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.html">Home</a>
@@ -83,13 +144,6 @@
     </div>
 
     <!-- Main Content-Mission -->
-    <style>
-        .content-mission { 
-            text-align: left; 
-            background: linear-gradient(to right, #7ba6c7, #bcd3e9);
-            padding: 20px;
-        }
-      </style>
     <div class = "content-mission">
         <h2> Mission </h2>
         <p> why the emphasis on prevention </p> 
@@ -103,53 +157,11 @@
 
     <!-- Main Content-Pillars Title -->
     <div class = "content-pillarstitle">
-        <style>
-            .content-pillarstitle {
-                text-align: left;
-                padding: 20px 20px 0px 20px;  /* top right bottom left */
-                margin-top: 20px;
-            }
-        </style>
-        
         <h2> Pillars </h2>
     </div>
     
-
     <!-- Main Content-Pillars-->
     <div class="pillars-sections">
-        <style>
-            .pillars-sections {
-                display: flex;
-                gap: 20px;              /* space between sections */
-                justify-content: space-between; /* spreads sections out */
-                margin-bottom: 50px;    /* space btw sections + bottom */
-                padding: 0 20px;        /* adds 20px space inside, L + R */
-                box-sizing: border-box; /* ensures padding incl in width calc */
-
-            }
-    
-            .pillars-block {
-                flex: 1;                /* Equal width for all blocks */
-                background-color: white;
-                padding: 20px;
-                border-radius: 10px;    /* Rounds corners by 10px */
-                text-align: center;
-            }
-    
-            .pillars-title {
-                background-color:#7ba6c7; /* Customize this color */
-                color: #fef8ed;
-                border-radius: 10px;    /* Rounds corners by 10px */
-                padding: 10px 0;
-                width: 200px;           /* fixed width no matter text length */
-                margin: 0 auto 15px auto; /* center + add bottom margin */
-            }
-    
-            .pillars-text {
-                text-align: center;
-            }
-        </style>
-    
         <div class="pillars-block">
             <div class="pillars-title">Individualized Care</div>
             <p class="pillars-text"> description </p>
@@ -168,32 +180,7 @@
     
     <!-- Main Content-Howtojoin-->
     <div class="howtojoin">
-        <style>
-            .howtojoin {
-                display: flex;          /* heading + list = side-by-side */
-                align-items: flex-start; /* align top edges */
-                gap: 80px;              /* space btw heading and list */
-                padding: 40px;
-            }
-    
-            .howtojoin h1 {
-                margin: 0;
-                white-space: nowrap;    /* keep the heading on one line */
-            }
-    
-            .howtojoin ul {
-                list-style-type: disc;  /* normal bullet pts */
-                padding-left: 20px;
-                margin: 0;             /* removes default spacing for bullets */
-            }
-
-            .howtojoin li {
-            margin-bottom: 20px;        /* adds vertical space btw bullet pts */
-            }
-        </style>
-    
         <h2>How to Join?</h2>
-    
         <ul>
             <li>No application fee required.</li>
             <li>Members must be 14 years of age or older.</li>
@@ -201,6 +188,5 @@
             </li>
         </ul>
     </div>
-        
 </body>
 </html>
