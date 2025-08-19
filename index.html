@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organization Website</title>
     <style>
-        @font-face {
+        @font-face {                /* loads Rosehot font */
         font-family: 'Rosehot';
-        src: url('fonts/Rosehot.ttf') format('truetype');
+        src: url('fonts/Rosehot.ttf') format('truetype'); /* where it's stored*/
         font-weight: normal;
         font-style: normal;
         }
         body {
-            font-family: 'Charter', sans-serif;
+            font-family: 'Charter', sans-serif; /* sets body font to Charter */
             margin: 0;
             padding: 0;
             background-color: #fef8ed;
-            color: #102f48
+            color: #102f48;
             
         }
 
-        h1, h2, h3 {
+        h1, h2, h3 {                /* header color + font */
             color: #6d130a;
             font-family: 'Rosehot', sans-serif;
+        }
+
+        h1 {                        /* header 1 font size */
+            font-size: 60px;
         }
 
         /* Navigation Bar */
         .navbar {
             background-color: #102f48; /* black background */
-            color: white
+            color: white;
             height: 64px;              /* taller navbar */
             display: flex;             /* use flexbox */
             align-items: center;       /* vertically center items */
@@ -102,8 +106,8 @@
         <style>
             .content-pillarstitle {
                 text-align: left;
-                padding: 20px 20px 0px 20px;
-                margin-top: 20px
+                padding: 20px 20px 0px 20px;  /* top right bottom left */
+                margin-top: 20px;
             }
         </style>
         
@@ -116,28 +120,29 @@
         <style>
             .pillars-sections {
                 display: flex;
-                gap: 20px; /* space between blocks */
-                justify-content: space-between;
-                margin-bottom: 50px;
-                padding: 0 20px;
-                box-sizing: border-box;
+                gap: 20px;              /* space between sections */
+                justify-content: space-between; /* spreads sections out */
+                margin-bottom: 50px;    /* space btw sections + bottom */
+                padding: 0 20px;        /* adds 20px space inside, L + R */
+                box-sizing: border-box; /* ensures padding incl in width calc */
+
             }
     
             .pillars-block {
-                flex: 1; /* Equal width for all blocks */
+                flex: 1;                /* Equal width for all blocks */
                 background-color: white;
                 padding: 20px;
-                border-radius: 10px;
+                border-radius: 10px;    /* Rounds corners by 10px */
                 text-align: center;
             }
     
             .pillars-title {
                 background-color:#7ba6c7; /* Customize this color */
                 color: #fef8ed;
-                border-radius: 10px;
+                border-radius: 10px;    /* Rounds corners by 10px */
                 padding: 10px 0;
-                width: 200px; /* fixed width */
-                margin: 0 auto 15px auto; /* center and add bottom margin */
+                width: 200px;           /* fixed width no matter text length */
+                margin: 0 auto 15px auto; /* center + add bottom margin */
             }
     
             .pillars-text {
@@ -165,9 +170,9 @@
     <div class="howtojoin">
         <style>
             .howtojoin {
-                display: flex;          /* lay out children side-by-side */
+                display: flex;          /* heading + list = side-by-side */
                 align-items: flex-start; /* align top edges */
-                gap: 80px;              /* space between heading and list */
+                gap: 80px;              /* space btw heading and list */
                 padding: 40px;
             }
     
@@ -177,13 +182,13 @@
             }
     
             .howtojoin ul {
-                list-style-type: disc;
+                list-style-type: disc;  /* normal bullet pts */
                 padding-left: 20px;
-                margin: 0;
+                margin: 0;             /* removes default spacing for bullets */
             }
 
             .howtojoin li {
-            margin-bottom: 20px; 
+            margin-bottom: 20px;        /* adds vertical space btw bullet pts */
             }
         </style>
     
